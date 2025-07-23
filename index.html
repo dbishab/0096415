@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monochrome Link Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #1e1e1e;
+      --bg-card: #2b2b2b;
+      --bg-hover: #3a3a3a;
+      --text-light: #ffffff;
+      --border-light: #555555;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Fira Sans Condensed', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-light);
+      text-align: center;
+    }
+
+    header {
+      background-color: #000;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .link-item {
+      display: block;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      color: var(--text-light);
+      text-decoration: none;
+      padding: 1.2rem 1rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .link-item:hover {
+      background-color: var(--bg-hover);
+      transform: scale(1.01);
+    }
+
+    @media (max-width: 600px) {
+      .link-item {
+        font-size: 1rem;
+        padding: 1rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LinksHub</h1>
+  </header>
+  <div class="container">
+     <a href="https://www.bishab.com.np/" class="link-item">Personal Home Page</a>
+    <a href="https://home.0096415.xyz/" class="link-item">Local Home Page</a>
+    <a href="https://docs.bishab.com.np/" class="link-item">NextCloud</a>
+    <a href="https://stats.0096415.xyz/" class="link-item">Stats</a>
+    <a href="https://portainer.0096415.xyz/" class="link-item">Portainer</a>
+    <a href="https://speed.0096415.xyz/" class="link-item">SpeedTest</a>
+    <a href="https://tv.bishab.com.np/" class="link-item">TV.com.np</a>
+    <a href="https://tv.0096415.xyz/" class="link-item">TV.xyz</a>
+    <a href="https://torrent.0096415.xyz/" class="link-item">Torrent</a>
+    <a href="https://uptime.0096415.xyz/" class="link-item">Uptime</a>
+   
+  </div>
+</body>
+</html>
