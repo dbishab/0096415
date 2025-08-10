@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(to bottom, #111827, #0a0a0a); color: #e5e7eb; }
+    .btn {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1rem; border-radius: 0.75rem; border: 1px solid #1f2937;
+      background: linear-gradient(to bottom right, rgba(17,24,39,0.6), rgba(31,41,55,0.4));
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn:hover { transform: scale(1.02); box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+    .accent { position: absolute; top: -1px; left: -1px; width: 2.5rem; height: 2.5rem; border-bottom-left-radius: 0.75rem; background: linear-gradient(to right, transparent, rgba(31,41,55,0.2), transparent); opacity: 0; transition: opacity 0.15s; }
+    .btn:hover .accent { opacity: 0.6; }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+  <div class="w-full max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-3xl font-semibold tracking-tight">LinksHub</h1>
+      <p class="text-sm text-gray-400 mt-1">Personal website of dBishab to host my personal sever</p>
+    </header>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <a href="https://www.bishab.com.np" target="_blank" class="relative btn"><div><div class="text-sm font-medium">HomePage</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://home.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">ServerHome</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://docs.bishab.com.np" target="_blank" class="relative btn"><div><div class="text-sm font-medium">NextCloud</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://stats.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">StatsHome</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://speed.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">SpeedTest</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://tv.bishab.com.np" target="_blank" class="relative btn"><div><div class="text-sm font-medium">dBishabTV</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://photos.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">dBishabPhotos</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://torrent.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">Torrent</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://uptime.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">Uptime</div><div class="text-xs text-gray-400 mt-1"></div></div><span class="accent"></span></a>
+      <a href="https://jelly.0096415.xyz" target="_blank" class="relative btn"><div><div class="text-sm font-medium">PersonalTV</div><div class="text-xs text-gray-400 mt-1">Mostly Offline</div></div><span class="accent"></span></a>
+    </div>
+
+    <footer class="mt-8 text-xs text-gray-500">
+      Made with love by dBishab
+    </footer>
+  </div>
+
+  <div aria-hidden class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute left-8 top-16 w-72 h-72 rounded-full blur-3xl opacity-10 bg-gradient-to-tr from-gray-700 to-gray-800"></div>
+    <div class="absolute right-12 bottom-12 w-52 h-52 rounded-full blur-2xl opacity-8 bg-gradient-to-bl from-gray-700 to-gray-900"></div>
+  </div>
+</body>
+</html>
